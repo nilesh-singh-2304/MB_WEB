@@ -142,7 +142,7 @@ theme="dark"
             <div className="p-6 absolute bottom-0 left-0 right-0 bg-gray-800 opacity-90">
               <h3 className="text-xl font-bold text-white">What we do?</h3>
               <div className="h-0 overflow-hidden group-hover:h-16 group-hover:mt-4 transition-all duration-300">
-                <p className="text-white text-sm">We are an organization of budding electronics enthusiasts aiming at their motto "From Innovation to Implementation" We help students to nurture their new skill-sets by conducting various workshops and competitions. We aim to fill in the void of Electronics hobbyists in the institute by providing a platform where the theory learnt in classes can be applied in the real world..</p>
+                <p className="text-white text-sm">We are an organization of budding electronics enthusiasts aiming at their motto From Innovation to Implementation We help students to nurture their new skill-sets by conducting various workshops and competitions. We aim to fill in the void of Electronics hobbyists in the institute by providing a platform where the theory learnt in classes can be applied in the real world..</p>
               </div>
             </div>
           </div>
@@ -151,7 +151,7 @@ theme="dark"
             <div className="p-6 absolute bottom-0 left-0 right-0 bg-gray-800 opacity-90">
               <h3 className="text-xl font-bold text-white">Who we are?</h3>
               <div className="h-0 overflow-hidden group-hover:h-16 group-hover:mt-4 transition-all duration-300">
-                <p className="text-white text-sm">The name Microbird is symbolic of the vision of the organization where Micro reminds us of it's connection with The Electronics industry and the term bird is symbolic of the vision the founders wanted to it to progress, reaching the higher skies like a bird aiming at new successes and milestones and spreading wings of innovation all around..</p>
+                <p className="text-white text-sm">The name Microbird is symbolic of the vision of the organization where Micro reminds us of its connection with The Electronics industry and the term bird is symbolic of the vision the founders wanted to it to progress, reaching the higher skies like a bird aiming at new successes and milestones and spreading wings of innovation all around..</p>
               </div>
             </div>
           </div>
