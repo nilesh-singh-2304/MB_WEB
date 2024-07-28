@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
+import NextTopLoader from 'nextjs-toploader';
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar";
+import { ToastContainer, toast } from 'react-toastify';
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,9 +18,37 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      
+      <body className={inter.className}>
+
+      {/* <Navbar/>
+      <ToastContainer
+position="bottom-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="dark"
+/>
+      <NextTopLoader color="#2299DD"
+ initialPosition={0.08}
+ crawlSpeed={200}
+ height={3}
+ crawl={true}
+ showSpinner={true}
+ easing="ease"
+ speed={200}
+ shadow="0 0 10px #2299DD,0 0 5px #2299DD" /> */}
+      {children}
+      <Footer/>
+      </body>
     </html>
   );
 }

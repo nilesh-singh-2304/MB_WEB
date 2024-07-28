@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      height: {
+        '128': '32rem',
+        '140' : '36rem',
+        '149' : '40rem',
+        '150' : '41rem'
+      },
+      minHeight: {
+        '150' : '41rem'
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -15,6 +24,9 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+    
+  ],
 };
 export default config;
