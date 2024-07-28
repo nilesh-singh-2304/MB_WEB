@@ -12,10 +12,10 @@ import { SiGmail } from "react-icons/si";
 import { MdDelete } from "react-icons/md";
 import { FaEdit } from "react-icons/fa"; 
 const Comps = async() => {
-    let coms = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/task`)
-    let Data = coms.data
-    let comps = Data.comps
-    console.log(comps) 
+    // let coms = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/task`)
+    // let Data = coms.data
+    // let comps = Data.comps
+    // console.log(comps) 
   return (
 //     <div>
      
@@ -128,7 +128,7 @@ const Comps = async() => {
 // </div>
 
 //     </div>
-<div>hello</div>
+<div>hello</div> 
   )
 }
 
