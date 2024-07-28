@@ -81,9 +81,9 @@ const Events = async() => {
                       <div className="stat-figure text-secondary">
                       </div>
                       <div className="stat-value">100%</div>
-                      <div className="stat-title">Placement of 24' Batch</div>
+                      <div className="stat-title">Placement of 24 Batch</div>
                       <div className="stat-desc text-secondary">
-                        Majority 25' doing Internships
+                        Majority 25 doing Internships
                       </div>
                     </div>
                   </div>

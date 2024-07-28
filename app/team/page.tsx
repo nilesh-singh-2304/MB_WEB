@@ -98,9 +98,9 @@ const Team = async() => {
                       <div className="stat-figure text-secondary">
                       </div>
                       <div className="stat-value">100%</div>
-                      <div className="stat-title">Placement of 24' Batch</div>
+                      <div className="stat-title">Placement of 24 Batch</div>
                       <div className="stat-desc text-secondary">
-                        Majority 25' doing Internships
+                        Majority 25 doing Internships
                       </div>
                     </div>
                   </div>
@@ -131,7 +131,7 @@ const Team = async() => {
     <div className="grid grid-cols-2  gap-x-4 gap-y-8 md:grid-cols-3 lg:gap-x-8 lg:gap-y-12">
       {/* <!-- person - start --> */}
       {sec.map((item) => (
-        <div className='bg-gray-700 p-3 rounded-xl border border-gray-500'>
+        <div key={item._id} className='bg-gray-700 p-3 rounded-xl border border-gray-500'>
         <div className="mb-2 h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg sm:mb-4 sm:h-60 md:h-80">
           <img src={item.image} loading="lazy" alt="Photo by Radu Florin" className="h-full w-full object-cover hover:scale-110 transition object-top" />
         </div>
@@ -174,7 +174,7 @@ const Team = async() => {
       {jsec.map((item) => (
         
       
-      <div className="flex flex-col items-center rounded-lg bg-gray-700 border border-gray-500 p-4 lg:p-4">
+      <div key={item._id} className="flex flex-col items-center rounded-lg bg-gray-700 border border-gray-500 p-4 lg:p-4">
         <div className="mb-2 h-24 w-24 overflow-hidden rounded-lg bg-gray-200 shadow-lg md:mb-4 md:h-40 md:w-40">
           <img src={item.image} loading="lazy" alt="Photo by Radu Florin" className="h-full w-full hover:scale-110 transition object-cover object-top" />
         </div>
@@ -211,7 +211,7 @@ const Team = async() => {
     <div className="grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-4 lg:gap-x-8 lg:gap-y-12">
       {/* <!-- person - start --> */}
       {mem.map((item) => (
-      <div className="flex flex-col items-center">
+      <div key={item._id} className="flex flex-col items-center">
         <div className='border border-gray-500 p-5 px-8 rounded-xl bg-gray-700'>
         <div className="mb-2 ml-1 h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:mb-4 md:h-32 md:w-32">
           <img src={item.image} loading="lazy" alt="Photo by Radu Florin" className="h-full w-full hover:scale-110 transition cursor-pointer object-cover object-top" />
