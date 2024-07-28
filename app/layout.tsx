@@ -24,7 +24,7 @@ export default function RootLayout({
       
       <body className={inter.className}>
 
-      {/* <Navbar/>
+      <Navbar/>
       <ToastContainer
 position="bottom-right"
 autoClose={5000}
@@ -45,7 +45,7 @@ theme="dark"
  showSpinner={true}
  easing="ease"
  speed={200}
- shadow="0 0 10px #2299DD,0 0 5px #2299DD" /> */}
+ shadow="0 0 10px #2299DD,0 0 5px #2299DD" />
       {children}
       <Footer/>
       </body>
