@@ -9,7 +9,10 @@ type Data = {
   name: string;
 };
 export async function POST(request: NextRequest , res: NextResponse) {
-   await mongoose.connect(process.env.MONGO_URI)
+  //  await mongoose.connect(process.env.MONGO_URI)
+  if(!mongoose.connections[0].readyState){
+    await mongoose.connect(process.env.MONGO_URI)
+}
    try {
     const body = await request.json();
     console.log(body)

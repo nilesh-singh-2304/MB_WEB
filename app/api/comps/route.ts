@@ -9,7 +9,10 @@ type Data = {
   name: string;
 };
 export async function POST(request: NextRequest , res: NextResponse) {
-  const connect = await mongoose.connect(process.env.MONGO_URI)
+  // const connect = await mongoose.connect(process.env.MONGO_URI)
+  if(!mongoose.connections[0].readyState){
+    await mongoose.connect(process.env.MONGO_URI)
+}
    try {
     const body = await request.json();
     if(body.action == "add"){
