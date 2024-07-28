@@ -246,9 +246,9 @@ export const EditMem = (mbid) => {
 
   useEffect(() => {
     fetchData()
-    if(!localStorage.getItem("token") || localStorage.getItem("role") !== "admin"){
-      router.push(`${process.env.NEXT_PUBLIC_HOST}/admin/login`)
-    }
+    // if(!localStorage.getItem("token") || localStorage.getItem("role") !== "admin"){
+    //   router.push(`${process.env.NEXT_PUBLIC_HOST}/admin/login`)
+    // }
   }, [ router])
 
   const fetchData = async () => {
