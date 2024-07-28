@@ -11,7 +11,7 @@ const buildGoogleGenAIPrompt = (messages: Message[]) => ({
     .map(message => ({
       role: message.role === 'user' ? 'user' : 'model',
       parts: [{ text: message.content }],
-    })),
+    })) ,
 });
 
 export async function POST(req: Request) {
