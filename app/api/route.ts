@@ -1,5 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import competitions from "@/model/competitions";
 import connectDB from "@/mongoose/mongoose";
 import { NextRequest, NextResponse } from "next/server";
 
