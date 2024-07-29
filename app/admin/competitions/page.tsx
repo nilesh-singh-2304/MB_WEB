@@ -1,5 +1,5 @@
-
-import React, { useEffect } from 'react'
+'use client'
+import React from 'react'
 import {Remfot} from '../remfot'
 import { AddComp } from '../remfot'
 import axios from 'axios'
@@ -12,7 +12,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
-export const runtime = 'edge'
 // import { useRouter } from 'next/navigation'
 const Comps = async() => {
     // const router = useRouter()
