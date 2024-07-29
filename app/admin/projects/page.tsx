@@ -1,4 +1,4 @@
-
+'use client'
 import React from 'react'
 import {Remfot} from '../remfot'
 import { AddProj } from '../projcontrol'

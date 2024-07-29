@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import { FaLinkedin } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";

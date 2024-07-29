@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import { MdOutlineAddTask } from "react-icons/md";
 import axios from 'axios'

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import {Remfot} from '../remfot'
 import axios from 'axios'
