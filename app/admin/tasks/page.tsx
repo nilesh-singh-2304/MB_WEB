@@ -11,6 +11,8 @@ import { FaSquareWhatsapp } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import { MdDelete } from "react-icons/md";
 import { FaEdit } from "react-icons/fa"; 
+export const runtime = 'edge'
+
 const Comps = async() => {
     let coms = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/task`)
     let Data = coms.data

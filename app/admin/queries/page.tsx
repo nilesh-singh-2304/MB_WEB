@@ -1,7 +1,7 @@
 import React from 'react'
 import {Remfot} from '../remfot'
 import axios from 'axios'
-
+export const runtime = 'edge'
 const Team = async() => {
     let coms = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/query`)
     let Data = coms.data

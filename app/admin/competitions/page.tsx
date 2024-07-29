@@ -12,6 +12,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
+export const runtime = 'edge'
 // import { useRouter } from 'next/navigation'
 const Comps = async() => {
     // const router = useRouter()

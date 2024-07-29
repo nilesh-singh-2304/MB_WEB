@@ -12,6 +12,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
+export const runtime = 'edge'
 const Comps = async() => {
     let coms = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/proj`)
     let Data = coms.data
