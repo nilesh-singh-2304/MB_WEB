@@ -2,7 +2,7 @@
 import React from 'react'
 import { MdOutlineAddTask } from "react-icons/md";
 import axios from 'axios'
-
+export const runtime = 'edge'
 const Tasks = async() => {
   let tasks = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/task`)
     let Data = tasks.data

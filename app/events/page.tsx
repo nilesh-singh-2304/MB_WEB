@@ -6,7 +6,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { SiYoutube } from "react-icons/si";
 import Link from 'next/link';
 import axios from 'axios';
-
+export const runtime = 'edge'
 const Events = async() => {
   let coms = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/evens`)
     let Data = coms.data

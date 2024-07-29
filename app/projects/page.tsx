@@ -7,6 +7,7 @@ import { FaGoogleDrive } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import axios from 'axios';
 import Link from 'next/link';
+export const runtime = 'edge'
 const Projects = async() => {
   let coms = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/proj`)
     let Data = coms.data

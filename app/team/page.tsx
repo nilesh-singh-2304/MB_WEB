@@ -6,7 +6,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Link from 'next/link';
 import axios from 'axios';
-
+export const runtime = 'edge'
 const Team = async() => {
 
   let res = await axios.post(`${process.env.NEXT_PUBLIC_HOST}/api/member` , {

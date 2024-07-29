@@ -4,7 +4,7 @@ import { FaSquareWhatsapp } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import axios from 'axios';
 import { QuerForm } from '../quercontrol';
-
+export const runtime = 'edge'
 const Services = async() => {
   let coms = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/serv`)
     let Data = coms.data
