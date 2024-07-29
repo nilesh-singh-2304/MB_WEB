@@ -17,7 +17,7 @@ const Comps = async() => {
     let Data = coms.data
     let comps = Data.comps
     console.log(comps)
-  return ( 
+  return (  
     <div>
      
      <Remfot/>
