@@ -6,13 +6,11 @@ import { IoSend } from "react-icons/io5";
 import axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 export const runtime = 'edge'
 const Competitions = async() => {
   let coms = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/comps`)
   let Data = coms.data
   let comps = Data.comps
-  const router = useRouter()
   // console.log(comps)
   return (
     <div className="min-h-screen">
@@ -110,7 +108,6 @@ const Competitions = async() => {
         <p className="text-4xl mb-5 font-bold text-gray-100 text-center">
           Events We Conduct
         </p>
-        <button className="btn btn-primary" onClick={() => router.refresh()}>refresh</button>
 
         <div className="font-[sans-serif] p-4 mx-28">
 
