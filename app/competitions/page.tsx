@@ -7,7 +7,9 @@ import axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
 export const runtime = 'edge'
+export const revalidate = 10; //revalidate every 10 seconds
 const Competitions = async() => {
+  
   let coms = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/comps`)
   let Data = coms.data
   let comps = Data.comps
