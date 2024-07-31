@@ -7,7 +7,6 @@ import { SiYoutube } from "react-icons/si";
 import Link from 'next/link';
 import axios from 'axios';
 export const runtime = 'edge'
-export const revalidate = 10; //revalidate every 10 seconds
 const Events = async() => {
   let coms = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/evens`)
     let Data = coms.data

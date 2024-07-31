@@ -6,8 +6,7 @@ import { IoSend } from "react-icons/io5";
 import axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
-export const runtime = 'edge'
-export const revalidate = 10; //revalidate every 10 seconds
+export const runtime = 'edge' 
 const Competitions = async() => {
   
   let coms = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/comps`)
