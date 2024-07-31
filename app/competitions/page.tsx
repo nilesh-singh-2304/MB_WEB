@@ -7,9 +7,12 @@ import axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
 export const runtime = 'edge' 
-const Competitions = async({comps}) => {
+export const dynamic = "force-dynamic";
+const Competitions = async() => {
   
-  
+  let coms = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/comps`)
+  let Data = coms.data
+  let comps = Data.comps
   // console.log(comps)
   return (
     <div className="min-h-screen">
@@ -153,15 +156,6 @@ const Competitions = async({comps}) => {
   );
 };
 
-export async function getServerSideProps() {
-  let coms = await axios.get(`${process.env.NEXT_PUBLIC_HOST}/api/comps`)
-  let Data = coms.data
-  let comps = Data.comps
-  return {
-    props: {
-      comps: JSON.parse(JSON.stringify(comps)),
-    },
-  };
-}
+
 
 export default Competitions;
